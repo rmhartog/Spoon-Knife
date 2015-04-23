@@ -2,11 +2,11 @@ language: node_js
 node_js:
   - "0.12"
 before_install:
-  - "[ \"$BUILD_PARENT\" = \"true\" ] && git checkout HEAD^2 && git rev-parse HEAD"
+  - "[ \"$BUILD_PARENT\" = \"true\" ] && git checkout HEAD^2 && echo \"OCTOPULL_SHA=$(git rev-parse HEAD)\"; exit 0"
+env:
+  - BUILD_PARENT=true
+  - BUILD_PARENT=false
 matrix:
   allow_failures:
-    - env:
-      - BUILD_PARENT=true
-  include:
     - env:
       - BUILD_PARENT=true
