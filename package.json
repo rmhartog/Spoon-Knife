@@ -1,0 +1,19 @@
+{
+  "name": "Spoon-Knife",
+  "version": "1.0.0",
+  "description": "This repository is meant to provide an example for *forking* a repository on GitHub.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmhartog/Spoon-Knife.git"
+  },
+  "author": "Reinier Hartog <r.m.hartog@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmhartog/Spoon-Knife/issues"
+  },
+  "homepage": "https://github.com/rmhartog/Spoon-Knife"
+}
