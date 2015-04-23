@@ -6,4 +6,4 @@ matrix:
     - env:
       - BUILD_MERGE=true
     - env:
-	  -BUILD_MERGE=false
+      - BUILD_MERGE=false
