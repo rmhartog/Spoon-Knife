@@ -1,9 +1,12 @@
 language: node_js
 node_js:
   - "0.12"
+before_install:
+  - "[ \"$BUILD_PARENT\" = \"true\" ] && git checkout HEAD^2 && git rev-parse HEAD"
 matrix:
+  allow_failures:
+    - env:
+      - BUILD_PARENT=true
   include:
     - env:
-      - BUILD_MERGE=true
-    - env:
-      - BUILD_MERGE=false
+      - BUILD_PARENT=true
